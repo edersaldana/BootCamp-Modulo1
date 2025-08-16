@@ -101,7 +101,7 @@ public class CollectionsGuide {
         }
 
         // Streams, forma de iterar
-        //edades.forEach(clave, valor) -> System.out.println(clave + "tiene" + valor);
+        //edades.forEach((clave, valor) -> System.out.println(clave + " tiene " + valor));
 
     }
 }
