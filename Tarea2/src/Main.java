@@ -94,6 +94,7 @@ public class Main {
                         }
                         break;
                     case 1:
+                        System.out.println("--  REGISTAR UN LIBRO  --");
                         System.out.print("Título: ");
                         String tLibro = scan.nextLine();
                         System.out.print("Autor: ");
@@ -101,6 +102,7 @@ public class Main {
                         library.addMaterial(new Book("Book", tLibro, aLibro));
                         break;
                     case 2:
+                        System.out.println("--  REGISTAR UNA REVISTA  --");
                         System.out.print("Título: ");
                         String tRevista = scan.nextLine();
                         System.out.print("Autor: ");
@@ -108,6 +110,7 @@ public class Main {
                         library.addMaterial(new Magazine("Magazine", tRevista, aRevist));
                         break;
                     case 3:
+                        System.out.println("--  REGISTAR UNA TESIS  --");
                         System.out.print("Título: ");
                         String tTesis = scan.nextLine();
                         System.out.print("Autor: ");
@@ -115,19 +118,22 @@ public class Main {
                         library.addMaterial(new Thesis("Thesis", tTesis, aTesis));
                         break;
                     case 4:
-                        System.out.print("Nombre nombre: ");
+                        System.out.println("--  REGISTAR UN USUARIO  --");
+                        System.out.print("Nombre : ");
                         String name = scan.nextLine();
-                        System.out.print("Nombre edad: ");
+                        System.out.print("Edad: ");
                         int age = scan.nextInt();
                         scan.nextLine();
-                        System.out.print("Nombre ciudad: ");
+                        System.out.print("Ciudad: ");
                         String city = scan.nextLine();
                         library.addUser(new User(name, age, city));
                         break;
                     case 5:
+                        System.out.println("--  MOSTRAR MATERIALES  --");
                         library.showMarerials();
                         break;
                     case 6:
+                        System.out.println("--  PRESTAR UN MATERIAL  --");
                         System.out.print("Título del material: ");
                         String tPrestamo = scan.nextLine();
                         System.out.print("Usuario: ");
@@ -135,6 +141,7 @@ public class Main {
                         library.materialToast(tPrestamo, uPrestamo);
                         break;
                     case 7:
+                        System.out.println("--  DEVOLVER UN MATERIAL  --");
                         System.out.print("Título del material: ");
                         String tDevolver = scan.nextLine();
                         System.out.print("Usuario: ");
